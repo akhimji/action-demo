@@ -21,11 +21,11 @@ jobs:
         script: whoami
     - name: copy file via ssh key
       uses: appleboy/scp-action@master
-       env:
-      HOST: 159.89.89.13
-      USERNAME: root
-      PORT: 22
-      KEY: ${{ secrets.SSH_PRIVATE }}
-    with:
-     source: "./index.html"
-     target: "/var/www/html"
+      env:
+        HOST: 159.89.89.13
+        USERNAME: root
+        PORT: 22
+        KEY: ${{ secrets.SSH_PRIVATE }}
+      with:
+        source: "./index.html"
+        target: "/var/www/html"
