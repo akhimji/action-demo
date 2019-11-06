@@ -1,4 +1,4 @@
-![](https://github.com/alyarctiq/actions-demo/workflows/CI/badge.svg)
+![](https://github.com/alyarctiq/action-demo/workflows/CI/badge.svg)
 
 # action-demo
 actions testing
