@@ -34,4 +34,4 @@ jobs:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_WEBHOOK }}
       uses: pullreminders/slack-action@master
       with:
-        args: '{\"channel\":\"aly-test\",\"text\":\"Hello world\",\"username\":\"GitHub Action Post API Tester\"}'
+        args: '{\"channel\":\"aly-test\",\"text\":\"Push Complete :aw_yeah:\",\"username\":\"GitHub Action :github:\"}'
