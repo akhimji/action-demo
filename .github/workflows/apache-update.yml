@@ -29,3 +29,12 @@ jobs:
       with:
         source: "./index.html,./hello.html"
         target: "/var/www/html"
+    - name: Slack notification
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_USERNAME: GitAction # Optional.
+        SLACK_CHANNEL: aly-test # Optional.
+        SLACK_OVERRIDE_MESSAGE: 'hey hey hey... action pushed' # Optional.
+      uses: Ilshidur/action-slack@master
+      with:
+        args: 'A new commit has been pushed.'
